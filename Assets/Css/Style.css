@@ -1,0 +1,170 @@
+/* font-family: "Josefin Sans", sans-serif; */
+/* font-family: "Red Hat Display", sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color--:rgb(70, 70, 70);
+    --segund-color--:rgb(184, 184, 184);
+    --color-borders--:rgb(0, 0, 0);
+    --color-efect--:rgb(255, 179, 37);
+}
+
+body {
+    background-image: url(../Img/paisagem-natural-com-areia-preta-na-praia.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+}
+
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.4rem;
+}
+
+h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+}
+
+h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+}
+
+h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.8rem;
+}
+
+/* CSS-menu */
+
+.link-home {
+    font-size: 4.5rem;
+    color: var(--color-borders--);
+    text-decoration: none;
+    
+}
+
+.home-efect {
+    font-size: 4.5rem;
+}
+
+.link-home:hover {
+    .home-efect {
+        color: var(--color-efect--);
+        transition: all 200ms ease;
+    }
+}
+
+.last-lt {
+    font-size: 1.8rem;
+}
+
+
+.flex-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(5rem);
+    border-bottom: solid 0.1rem var(--color-borders--);
+    padding: 1rem;
+}
+
+.flex-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.item-nav {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0 1rem ;
+}
+.link-nav:hover {
+    .last-lt {
+        color: var(--color-efect--);
+        transition: all 200ms ease;
+
+    }
+}
+
+.link-nav {
+    display: block;
+    position: relative;
+    padding: 0.3rem;
+    
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color-borders--);
+}
+
+.link-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: var(--color-efect--);
+    transition: all 200ms ease;
+    border-radius: 0.2rem;
+    z-index: 1;
+}
+
+.link-nav:hover::after {
+    bottom: 2.5rem;
+    right: -0.8rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.section-open {
+    padding-top: 6.6rem;
+    height: 100vh;
+    display: block;
+
+}
+
+.section-two {
+    height: 100vh;
+    background-color: rgb(138, 138, 138);
+    
+}
